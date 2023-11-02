@@ -66,7 +66,6 @@ export default function AddSkills(){
     function handleCancel(){
       setState([]);
       navigate('/');
-      localStorage.setItem("userData", JSON.stringify(state));
     }
 
     console.log(state);
