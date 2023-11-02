@@ -1,0 +1,30 @@
+[
+    {   "id": 1,
+        "skillname":"Javascript",
+        "assesmentlevel":"Master",
+        "assesmentpercent":"30",
+        "no_of_selfassesment":"10",
+        "yrsofexp":"5",
+        "selfassesmentlevel":"Expert",
+        "selfassesmentpercent":"90"
+    },
+
+    {   "id":2,
+        "skillname":"UX Design",
+        "assesmentlevel":"Star",
+        "assesmentpercent":"90",
+        "no_of_selfassesment":"10",
+        "yrsofexp":"2",
+        "selfassesmentlevel":"Master",
+        "selfassesmentpercent":"50"
+    },
+    {   "id":3,
+        "skillname":"Graphic Design",
+        "assesmentlevel":"Master",
+        "assesmentpercent":"30",
+        "no_of_selfassesment":"10",
+        "yrsofexp":"5",
+        "selfassesmentlevel":"Expert",
+        "selfassesmentpercent":"90"
+    }
+]

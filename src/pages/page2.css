@@ -1,0 +1,380 @@
+.app{
+    padding: 0 80px;
+    user-select: none;
+    min-height: calc(100vh - 100px);
+}
+
+h1{
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.basic{
+    padding-left: 35px;
+    font-family: 'Roboto';
+}
+
+.header-box-1{
+  min-width: 250px;
+  display: flex;
+  direction: row;
+}
+.add-skills{
+    padding-top: 15px;
+}
+
+.basic-header{
+    font-size: 12px;
+    font-weight: 400;
+    color: #0000008A;
+}
+
+.Svgg{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #757575;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #F05D23;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .skill{
+    width: 20%;
+    display:flex;
+    direction: row;
+    justify-content: space-between;
+    user-select: none;
+  }
+
+  .svg1{
+    position: relative;
+    top:9px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .flex-box-row1{
+    display: flex;
+    direction: row;
+  }
+
+  .svg2{
+    left: 5px
+  }
+
+  .svg3{
+    top:7px;
+  }
+
+  .svg4{
+    position: relative;
+    top:7px;
+    cursor: pointer;
+  }
+
+  .svg5{
+    position: relative;
+    top:7px;
+    left: 1px;
+  }
+
+  .checkbox1{
+    position: relative;
+    top:5px;
+  }
+
+  .status{
+    position: absolute;
+  }
+
+  .level{
+    padding-left: 20px;
+    width: 90%;
+    display:flex;
+    direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    user-select: none;
+  }
+
+  .level1{
+    color: #757575;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Calibri", sans-serif;
+    user-select: none;
+  }
+
+  .searchbar{
+    width: 800px;
+    background-color: #F2F2F2;
+    border: none;
+    font-size: 16px;
+  }
+
+  /* .select{
+    padding:0 20px
+  } */
+
+  .logo{
+    position: relative;
+    bottom: 50px;
+    padding-left: 20px;
+    width: 20%;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .expertise-text{
+    position: relative;
+    bottom: 12px;
+    color: #757575;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    user-select: none;
+  }
+
+  .tracker{
+    -webkit-appearance: none;
+    appearance: none;
+    background: #F2F2F2;
+    cursor: pointer;
+    outline: none;
+    width: 17rem;
+    border-radius: 6px;
+    overflow: hidden;
+    user-select: none;
+    box-shadow: inset 0 0 5px rbga(0,0,0,1);
+  }
+
+   .tracker::-webkit-slider-thumb { 
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background:#F05D23; 
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -407px 0 0 400px #F05D23; 
+ }  
+ 
+  .tracker-data{
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-size: 12px;
+    position: relative;
+    bottom: 8px;
+    user-select: none;
+  }
+  
+  .yrs-exp{
+    height: 21px;
+    width: 33px;
+    text-align: center;
+    border: solid 4px #F2F2F2;
+    background-color: #FFFFFF;
+    color: #F05D23;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 15px;
+    border-radius: 5px;
+    padding: 7px 8px;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  
+  .rectangle{
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    height: 44px;
+    width: 200px;
+    color: #757575;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    font-weight: 400;
+    font-family: 'Roboto';
+  }
+
+  .rectangle1{
+    margin-left: 35px;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    height: 44px;
+    width: 800px;
+    border-radius: 4px;
+  }
+
+  .box1{
+    width: 80%;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 20px;
+  }
+
+  input:focus {outline:0;}
+  .yrs-exp:focus {
+    outline: none !important;
+  }
+  button:focus {outline:0;}
+  /* .rectangle:focus {outline:0;} */
+
+  .add-skills-button{
+    position: relative;
+    top: 15px;
+    height: 40px;
+    width: 148px;
+    padding:8px, 12px, 8px, 12px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #F05D23;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .add-skills-button:hover{
+    background-color: #df4c12
+  }
+
+  .end-buttons{
+    padding-left: 970px;
+    width: 20%;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 10px;
+  }
+
+  .end-button1{
+    width: 68px;
+    background-color: #F2F2F2;
+    padding: 8px, 12px, 8px, 12px;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    color: #192A3E;
+    text-align: center;
+    padding:0.8em;
+    cursor: pointer;
+  }
+
+  .end-button1:hover{background-color: #eee8e8}
+
+  .end-button2{
+    width: 120px;
+    height: 17px;
+    background-color: #F05D23;
+    padding: 8px, 24px, 8px, 24px;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    padding:0.8em;
+    cursor: pointer;
+  }
+
+  .end-button2:hover{background-color: #df4c12}
+
+  #line {
+    margin-top: -55px;
+  }
+
+  .flex-row-skills{
+    display: flex;
+    direction: column;
+    justify-content: space-between;
+  }
+
+  .autocomplete-search{
+    position: relative;
+    bottom:10px;
+    right:10px;
+  }
