@@ -24,10 +24,6 @@ export default function AddSkills(){
     const newskills = [];
     
     function handleStateChange(newValue){
-      // for(i in state){
-      //   if(state[i].skillname not in newValue){
-
-      //  }
         // if delete 
         if(state.length>newValue.length){
         const newstate = state.filter(item => newValue.includes(item.skillname));
@@ -59,7 +55,7 @@ export default function AddSkills(){
         setValue(moifiedvalue1)
     }
     
-    
+    //saving data to local memory
     const saveCacheMemory = () => {localStorage.setItem("userData", JSON.stringify(state));};
 
     

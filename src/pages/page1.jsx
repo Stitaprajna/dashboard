@@ -36,15 +36,21 @@ export default function Page1(){
     };
 
 
-    // Uploading and Loading the initial data
-    // useEffect(()=>{localStorage.setItem("userdata",data)},[data]);
+    
 
     
+    
     const data = JSON.parse(localStorage.getItem("userData"));
+    if(!data){
+        data = [];
+    }
+    
     data.forEach(item => {
-    const trueLevel = Object.keys(item.level).find(key => item.level[key] === true);
-    item.level = trueLevel || 'No level';
-    });
+        const trueLevel = Object.keys(item.level).find(key => item.level[key] === true);
+        item.level = trueLevel || 'No level';
+        });
+    
+    
       
 
     console.log(data);
