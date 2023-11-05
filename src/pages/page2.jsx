@@ -1,12 +1,11 @@
-import "./page2.css"
+import "./Page2.css"
 import { useNavigate } from 'react-router-dom';
 import BackArrow from "../icons/backarrow";
-import AddSkills from "../components/addskills";
+import AddSkills from "../components/Addskills";
 
 export default function Page2(){
 
     const navigate = useNavigate({});
-
     return(
         <div className="app">
             <div style={{display:"flex",gap:"10px"}}>

@@ -1,9 +1,7 @@
 import React from "react";
-import { useState } from "react";
 export default function YearsOfExperience({id,state,setState,value}){
-    // const [counts,setCounts] = useState(0);
 
-    // // //Years of Experience
+    //Years of Experience
     function PlusHandler(){
         setState([...state.slice(0,id),{...state[id],yrsofexp:state[id].yrsofexp+1},...state.slice(id+1,value.length)])
       };

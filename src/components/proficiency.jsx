@@ -1,6 +1,6 @@
 import React from "react";
 import Question from "../icons/question";
-import ProgressBar from "./progressbar";
+import ProgressBar from "./ProgressBar";
 
 export default function Proficiency({id,state,setState,value}){
     return(

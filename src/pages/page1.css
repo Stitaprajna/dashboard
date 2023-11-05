@@ -8,6 +8,62 @@
     font-size: 24px;
 }
 
+
+
+
+
+
+.done{   
+  position:relative;
+  top:25px;
+  left:10px;
+}
+
+.done-row-1{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-wrap:wrap
+}
+
+.done-row-2{  
+  display: flex;
+  direction: row;
+  justify-content: flex-start;
+  position: relative;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-wrap:wrap
+}
+
+.checkbox{   
+  position:relative; 
+  bottom:"20px";
+}
+
+.checkbox-column-1{   
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-wrap:wrap
+}
+
+.checkbox-column-2{
+  display: flex;
+  direction: row;
+  justify-content: flex-start;
+  position: relative;
+  gap:2px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-wrap:wrap
+}
+
+
+
+
+
 .flex-row{
   height: 100px;
   display: flex;
@@ -131,12 +187,12 @@
     background-color: #eee;
   }
   
-  /* On mouse-over, add a grey background color */
+  /* On mouse-over; add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
-  /* When the checkbox is checked, add a blue background */
+  /* When the checkbox is checked; add a blue background */
   .container input:checked ~ .checkmark {
     background-color: #F05D23;
   }

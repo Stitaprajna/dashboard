@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import EmptyComponent from "./emptycomponent";
-import Checkbox from "./checkbox";
+import Checkbox from "./CheckBox";
 import Delete from "../icons/delete";
 import Question from "../icons/question";
-import Proficiency from "./proficiency";
-import YearsOfExperience from "./yearsofexperience";
-import SelectSkills from "./selectskiils";
-import HorizontalLine from "./horizonatlline";
+import Proficiency from "./Proficiency";
+import YearsOfExperience from "./YearsOfExperience";
+import SelectSkills from "./SelectSkiils";
+import HorizontalLine from "./HorizonatlLine";
 
 
 export default function SkillSection({id,value,SkillName,state,setState,handleDeleteSkill}){
-
-    // const [isDelete,setIsDelete]= useState(true);
     
        
     return(

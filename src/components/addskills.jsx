@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import SpecialPlus from "../icons/plusspecial";
 import { TextField, Autocomplete, MenuItem } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
-import SkillSection from "../components/skillsection";
+import SkillSection from "./SkillSection";
 import Search from "../icons/search";
-import { json, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
-
+//Avaliable skills to choose
 const names = [
     "UX Design",
     "Graphic Design",
@@ -21,14 +21,15 @@ export default function AddSkills(){
     const navigate = useNavigate({});
     const [state,setState] = useState([]);
     const [value,setValue] = useState([]);
+    // const [isCached,setIscached] = useState(false);
     const newskills = [];
     
     function handleStateChange(newValue){
         // if delete 
         if(state.length>newValue.length){
-        const newstate = state.filter(item => newValue.includes(item.skillname));
+        const newState = state.filter(item => newValue.includes(item.skillname));
         //state 
-        setState(newstate);
+        setState(newState);
       }
         // adding element before any deletion
         else{
@@ -37,11 +38,11 @@ export default function AddSkills(){
                             skillname:newValue[newValue.length-1],
                             yrsofexp:0,
                             level:{
-                                    isbegineer:false,
-                                    isadvanced:false,
-                                    isexpert:false,
-                                    ismaster:false,
-                                    isstar:false
+                                    isBegineer:false,
+                                    isAdvanced:false,
+                                    isExpert:false,
+                                    isMaster:false,
+                                    isStar:false
                                   },
                             proficiency:'50',
                             }]);
@@ -49,14 +50,26 @@ export default function AddSkills(){
                         }
     
     function handleDeleteSkill(skillname){
-        const moifiedstate = state.filter(item => item.skillname !=skillname)
-        const moifiedvalue1 = value.filter(item => item !=skillname)
-        setState(moifiedstate)
-        setValue(moifiedvalue1)
+        const moifiedState = state.filter(item => item.skillname !=skillname)
+        const moifiedValue1 = value.filter(item => item !=skillname)
+        setState(moifiedState)
+        setValue(moifiedValue1)
     }
     
-    //saving data to local memory
-    const saveCacheMemory = () => {localStorage.setItem("userData", JSON.stringify(state));};
+    //saving data to local storage
+    const saveCacheMemory = () => {
+      //finding the previously stored data
+      try{
+        console.log('found previously added data');
+        const exsistingData = JSON.parse(localStorage.getItem("userData"));
+        const updatedData = exsistingData.concat(state);
+        localStorage.setItem("userData", JSON.stringify(updatedData));
+      }catch(error){
+        //adding the first set of new skills
+        console.log('No Old data found')
+        localStorage.setItem("userData", JSON.stringify(state));
+      };
+    };
 
     
     function handleCancel(){
