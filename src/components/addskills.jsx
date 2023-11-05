@@ -50,10 +50,10 @@ export default function AddSkills(){
                         }
     
     function handleDeleteSkill(skillname){
-        const moifiedState = state.filter(item => item.skillname !=skillname)
-        const moifiedValue1 = value.filter(item => item !=skillname)
-        setState(moifiedState)
-        setValue(moifiedValue1)
+        const moifiedState = state.filter(item => item.skillname !=skillname);
+        const moifiedValue1 = value.filter(item => item !=skillname);
+        setState(moifiedState);
+        setValue(moifiedValue1);
     }
     
     //saving data to local storage
@@ -66,7 +66,7 @@ export default function AddSkills(){
         localStorage.setItem("userData", JSON.stringify(updatedData));
       }catch(error){
         //adding the first set of new skills
-        console.log('No Old data found')
+        console.log('No Old data found');
         localStorage.setItem("userData", JSON.stringify(state));
       };
     };
