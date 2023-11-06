@@ -1,7 +1,7 @@
 import "./Page2.css"
 import { useNavigate } from 'react-router-dom';
 import BackArrow from "../icons/backarrow";
-import AddSkills from "../components/Addskills";
+import AddSkills from "../components/AddSkills";
 
 export default function Page2(){
 
